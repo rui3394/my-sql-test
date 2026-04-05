@@ -8,7 +8,7 @@ Agents must read the task context before changing code, prefer the smallest viab
 
 - Human: final decision maker, reviewer of sensitive changes, and only merge authority.
 - Codex: primary implementer for scoped code and doc changes.
-- Gemini: architecture, design, and pull request reviewer focused on high-value risks.
+- Gemini: primary automated pull request reviewer focused on architecture, design, and high-value risks.
 - Copilot: local autocomplete and lightweight coding assistance.
 - GitHub Issues, TASKs, ADRs, and PRs: shared planning and review surface.
 - GitHub private repository: source of truth, audit history, and collaboration record.

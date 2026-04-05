@@ -2,7 +2,7 @@
 
 This repository setup creates a minimal Human-in-the-Loop collaboration skeleton for agent-assisted engineering work.
 
-The goal is to make planning, implementation, review, and merge decisions easier to audit across humans and coding agents.
+The goal is to make planning, implementation, review, planning, and merge decisions easier to audit across humans and coding agents.
 
 # Who Reads What
 
@@ -18,8 +18,8 @@ The goal is to make planning, implementation, review, and merge decisions easier
 3. Ask Codex to implement the scoped change.
 4. Run local checks and validate the result.
 5. Open a pull request using the repository template.
-6. Request `@codex review` or equivalent automated review support.
-7. Ask Gemini to review architecture, risk, and change quality.
+6. Ask Gemini to review architecture, risk, and change quality.
+7. Optionally request `@codex review` as a second review signal.
 8. Have a human make the final merge decision.
 
 # Human Confirmation Required

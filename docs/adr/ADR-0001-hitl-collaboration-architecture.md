@@ -29,7 +29,8 @@ Operational rules:
 - ADRs record durable architectural and governance decisions.
 - Pull requests are the main collaboration and review interface.
 - Codex is the primary implementation agent for scoped changes.
-- Gemini is used primarily for review, architecture critique, and risk-focused feedback.
+- Gemini is the primary automated pull request reviewer and is used for architecture critique and risk-focused feedback.
+- `@codex review` is optional as a second review signal, not the default primary review step.
 - Copilot is limited to local completion and lightweight assistance.
 - A Human remains the final authority for acceptance and merge.
 
@@ -53,7 +54,8 @@ Operational rules:
 - The repository records what changed, why it changed, how it was reviewed, and what was validated.
 - Pull requests become the default place where implementation, review, risks, and merge readiness are evaluated together.
 - Codex is optimized for focused implementation work and therefore serves as the main writer for scoped repository changes.
-- Gemini is positioned as a reviewer and architecture critic so that it can focus on correctness, risk, maintainability, and decision quality rather than competing for authorship.
+- Gemini is positioned as the primary automated PR reviewer and architecture critic so that it can focus on correctness, risk, maintainability, and decision quality rather than competing for authorship.
+- Optional `@codex review` can provide a second automated review signal without changing the default reviewer role split.
 - Copilot remains useful for local completion and iteration speed, but it is not relied on as the source of truth or primary reviewer.
 - Human reviewers retain the final decision because repository changes may involve judgment about correctness, scope, security, scientific validity, and organizational risk that should not be delegated fully to automation.
 - The workflow stays lightweight and maintainable, but some manual coordination remains necessary.

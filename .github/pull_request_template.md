@@ -10,6 +10,8 @@
 
 ## Risks / rollback
 
+## Unresolved questions
+
 ## Reviewer guidance
 
 ## Checklist
