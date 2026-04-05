@@ -1,0 +1,16 @@
+# If these fields differ from the current Gemini Code Assist product schema,
+# adjust them to match the official documentation while keeping the same intent.
+
+review:
+  comment_severity_threshold: MEDIUM
+  use_style_guide: true
+  style_guide_path: .gemini/styleguide.md
+
+ignore:
+  - node_modules/**
+  - dist/**
+  - build/**
+  - .venv/**
+  - __pycache__/**
+  - coverage/**
+  - "*.min.js"
