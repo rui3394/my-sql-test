@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environments
+.env
+venv/
+env/
+
+# Editor & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# SQLite / DB dumps
+*.sqlite3
+
+# Secrets and local ssh keys
+ssh_key_rui3394/
+secrets/
+
+
+.env
+node_modules/
+dist/
+build/
+*.log
+ssh_key_rui3394/
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+.idea/
+.vscode/
